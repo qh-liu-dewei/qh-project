@@ -1,0 +1,56 @@
+@import './common/main.wxss';
+
+[data-custom-hidden="true"],[bind-data-custom-hidden="true"]{display: none !important;}
+/* == sky-theme start == */
+/* ================= 全局皮肤（食光外卖） ================= */
+
+page {
+  background: #f6f7fb;
+  color: #1f2330;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 通用卡片 */
+.box {
+  border-radius: 24rpx;
+  box-shadow: 0 10rpx 28rpx rgba(31, 35, 48, 0.06);
+}
+
+/* 订单列表卡片 */
+.recent_orders .box {
+  border-radius: 24rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 10rpx 28rpx rgba(31, 35, 48, 0.06);
+}
+.recent_orders .order_lists {
+  padding: 28rpx 22rpx 0;
+}
+.recent_orders .order_lists .date_type .status {
+  color: #ff8a1a;
+  font-weight: 600;
+}
+.recent_orders .order_lists .againBtn .btn {
+  background: linear-gradient(135deg, #ffd451, #ffb400);
+  color: #3a2a00;
+  font-weight: 600;
+  border-radius: 34rpx;
+  box-shadow: 0 6rpx 16rpx rgba(255, 180, 0, 0.26);
+}
+.recent_orders .order_lists .againBtn .new_btn {
+  border-radius: 34rpx;
+  border-color: #e8ecf5;
+  color: #4a5163;
+}
+
+/* 标签 */
+.tag {
+  border-radius: 8rpx;
+}
+.tag2 {
+  background: #fff6e0;
+}
+.tag3 {
+  background: #e9f8f1;
+}
+/* == sky-theme end == */

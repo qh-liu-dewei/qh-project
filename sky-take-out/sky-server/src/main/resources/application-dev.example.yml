@@ -1,0 +1,26 @@
+# 本地开发配置模板
+# 使用方法：复制为 application-dev.yml 后填入自己的环境信息（该文件已被 .gitignore 忽略）
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: sky_take_out
+    username: root
+    password: 你的数据库密码
+
+  redis:
+    host: localhost
+    port: 6379
+    password: 你的Redis密码
+    database: 1
+
+  # 演示环境使用模拟支付，下面的微信参数不填也能跑起来
+  wechat:
+    appid: 你的小程序AppID
+    secret: 你的小程序Secret
+    mchid: 你的微信商户号
+    mchSerialNo: 你的商户证书序列号
+    apiV3Key: 你的APIv3密钥
+    notifyUrl: https://你的域名/notify/paySuccess
+    refundNotifyUrl: https://你的域名/notify/refundSuccess
